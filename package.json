@@ -1,0 +1,17 @@
+{
+  "name": "personal_profile_page",
+  "version": "1.0.0",
+  "description": "Creates a package.json file with default settings for the project",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./public/assets/css/input.css -o ./public/assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
+  }
+}
