@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,6 +51,9 @@
       sizes="32x32"
     />
 
+    <!-- Scripts -->
+    <script src="components/headerNav.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,5 +63,60 @@
     <title>Personal Profile Page</title>
   </head>
   <body class="min-h-svh bg-white">
+    <header
+      class="flex items-center justify-between flex-nowrap gap-12 w-full fixed z-9999"
+    >
+      <div class="w-full invisible"></div>
+
+      <div
+        class="w-full p-4 bg-night-300/20 rounded-b-2xl flex items-center justify-between backdrop-blur-xl border-l-2 border-r-2 border-b-2 border-black/10"
+      >
+        <ul
+          class="grid grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center w-full relative"
+        >
+          <span
+            class="pill absolute top-0 left-0 h-full bg-blue-400 rounded-lg z-0 transition-all"
+          ></span>
+
+          <li class="list-none flex items-center justify-center">
+            <a
+              href="#home"
+              class="active relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
+              >Home</a
+            >
+          </li>
+          <li class="list-none flex items-center justify-center">
+            <a
+              href="#about"
+              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
+              >About</a
+            >
+          </li>
+          <li class="list-none flex items-center justify-center">
+            <a
+              href="#interests"
+              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
+              >Interests</a
+            >
+          </li>
+          <li class="list-none flex items-center justify-center">
+            <a
+              href="#favorites"
+              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
+              >Favorites</a
+            >
+          </li>
+          <li class="list-none flex items-center justify-center">
+            <a
+              href="#socials"
+              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
+              >Socials</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full invisible"></div>
+    </header>
   </body>
 </html>
