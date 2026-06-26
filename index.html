@@ -53,6 +53,8 @@
 
     <!-- Scripts -->
     <script src="components/headerNav.js" defer></script>
+    <script src="components/heroPicture.js" defer></script>
+    <script src="components/socialLinkButton.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -118,5 +120,44 @@
 
       <div class="w-full invisible"></div>
     </header>
+
+    <main class="p-4 sm:py-32 sm:px-6 lg:px-24">
+      <div
+        id="home"
+        class="grid grid-cols-1 gap-y-8 sm:grid-cols-[2fr_1fr] gap-x-16 justify-center items-center md:items-start"
+      >
+        <section class="flex flex-col gap-3 pt-20 sm:py-14">
+          <p class="text-night-900 text-[16px] xs:text-lg lg:text-2xl">
+            Hi there!
+          </p>
+
+          <div class="flex flex-col gap-1">
+            <h1
+              class="text-night-1200 text-xl xs:text-3xl lg:text-5xl font-semibold"
+            >
+              I'm Mark Lhester Pile
+            </h1>
+            <p class="text-night-1100 text-sm xs:text-[16px] lg:text-xl">
+              A curious and reflective person who enjoys learning, discovering
+              new interests, and understanding how things work. I value growth,
+              consistency, and self-improvement in my daily life. In my free
+              time, I enjoy relaxing, exploring creative ideas, and spending
+              time on things that inspire me.
+            </p>
+          </div>
+
+          <span
+            class="block w-full h-0.5 bg-orange-500 rounded-[999px] mb-2 mt-4 sm:mb-2 sm:mt-6"
+          ></span>
+
+          <ul
+            id="socialLinkBtn"
+            class="flex justify-start items-center gap-2 flex-wrap"
+          ></ul>
+        </section>
+
+        <div id="heroPictureContainer" class="w-full h-full"></div>
+      </div>
+    </main>
   </body>
 </html>
