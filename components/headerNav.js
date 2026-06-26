@@ -1,31 +1,49 @@
-const nav = document.querySelector("ul");
-const pill = document.querySelector(".pill");
-const links = document.querySelectorAll("ul li a");
-
-function movePill(link) {
-  pill.style.left = link.offsetLeft + "px";
-  pill.style.width = link.offsetWidth + "px";
+function renderNavLink(nav) {
+  return `
+    <li class="list-none flex items-center justify-center">
+      <a
+        href="${nav.href}"
+        class="${nav.state ? "active " : ""} relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-700 [&.active]:text-white [&.active]:font-semibold"
+        >${nav.label}</a
+      >
+    </li>
+  `;
 }
 
-function setActive(el) {
-  links.forEach((link) => link.classList.remove("active"));
-  el.classList.add("active");
-  movePill(el);
+function renderNavLinks(links){
+   return `
+    <span
+      class="pill absolute top-0 left-0 h-full bg-blue-500 rounded-lg z-0 transition-all"
+      aria-hidden="true"
+    ></span>
+    ${links.map((link) => renderNavLink(link)).join("")}
+  `;
 }
+const navLinks = [
+  {
+    href: "#home",
+    label: "Home",
+    state: "active",
+  },
+  {
+    href: "#about",
+    label: "About",
+  },
+  {
+    href: "#interests",
+    label: "Interests",
+  },
+  {
+    href: "#favorites",
+    label: "Favorites",
+  },
+  {
+    href: "#socials",
+    label: "Socials",
+  },
+];
 
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    setActive(link);
-  });
-});
 
-window.addEventListener("load", () => {
-  const active = document.querySelector("ul li a.active") || links[0];
-  movePill(active);
-});
+const navLink = document.getElementById("navLinks");
 
-window.addEventListener("resize", () => {
-  const active = document.querySelector("ul li a.active");
-  if (active) movePill(active);
-});
+navLink.innerHTML = renderNavLinks(navLinks);

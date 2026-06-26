@@ -23,7 +23,7 @@
     />
     <meta
       property="og:image"
-      content="/assets/visual_assets/images/photos/profile.jpg"
+      content="public/assets/visual_assets/images/photos/profile.jpg"
     />
     <meta
       property="og:image:alt"
@@ -52,73 +52,35 @@
     />
 
     <!-- Scripts -->
+
     <script src="components/headerNav.js" defer></script>
+    <script src="components/headerNavPill.js" defer></script>
     <script src="components/heroPicture.js" defer></script>
     <script src="components/socialLinkButton.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Funnel+Display:wght@300..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
     <title>Personal Profile Page</title>
   </head>
   <body class="min-h-svh bg-white">
     <header
-      class="flex items-center justify-between flex-nowrap gap-12 w-full fixed z-9999"
+      class="flex flex-row items-center justify-center flex-nowrap gap-12 w-full fixed z-9999"
     >
-      <div class="w-full invisible"></div>
 
-      <div
-        class="w-full p-4 bg-night-300/20 rounded-b-2xl flex items-center justify-between backdrop-blur-xl border-l-2 border-r-2 border-b-2 border-black/10"
-      >
-        <ul
-          class="grid grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center w-full relative"
+      <nav>
+        <div
+          class="w-full p-4 bg-night-300/20 rounded-b-2xl flex items-center justify-between backdrop-blur-xl border-l-2 border-r-2 border-b-2 border-black/10"
         >
-          <span
-            class="pill absolute top-0 left-0 h-full bg-blue-400 rounded-lg z-0 transition-all"
-          ></span>
-
-          <li class="list-none flex items-center justify-center">
-            <a
-              href="#home"
-              class="active relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
-              >Home</a
-            >
-          </li>
-          <li class="list-none flex items-center justify-center">
-            <a
-              href="#about"
-              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
-              >About</a
-            >
-          </li>
-          <li class="list-none flex items-center justify-center">
-            <a
-              href="#interests"
-              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
-              >Interests</a
-            >
-          </li>
-          <li class="list-none flex items-center justify-center">
-            <a
-              href="#favorites"
-              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
-              >Favorites</a
-            >
-          </li>
-          <li class="list-none flex items-center justify-center">
-            <a
-              href="#socials"
-              class="relative z-1 inline-block no-underline px-7 py-3 cursor-pointer leading-snug font-normal text-black transition-colors duration-150 hover:text-blue-500 [&.active]:text-white [&.active]:font-semibold"
-              >Socials</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="w-full invisible"></div>
+          <ul
+            class="grid grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center w-full relative"
+            id="navLinks"
+          ></ul>
+        </div>
+      </nav>
     </header>
 
     <main class="p-4 sm:py-32 sm:px-6 lg:px-24">
@@ -127,17 +89,17 @@
         class="grid grid-cols-1 gap-y-8 sm:grid-cols-[2fr_1fr] gap-x-16 justify-center items-center md:items-start"
       >
         <section class="flex flex-col gap-3 pt-20 sm:py-14">
-          <p class="text-night-900 text-[16px] xs:text-lg lg:text-2xl">
+          <p class="font-[Inter] text-night-900 text-[16px] xs:text-lg lg:text-2xl">
             Hi there!
           </p>
 
           <div class="flex flex-col gap-1">
             <h1
-              class="text-night-1200 text-xl xs:text-3xl lg:text-5xl font-semibold"
+              class="font-['Google_Sans'] text-night-1200 text-xl xs:text-3xl lg:text-5xl font-semibold"
             >
               I'm Mark Lhester Pile
             </h1>
-            <p class="text-night-1100 text-sm xs:text-[16px] lg:text-xl">
+            <p class="font-[Inter] text-night-1100 text-sm xs:text-[16px] lg:text-xl">
               A curious and reflective person who enjoys learning, discovering
               new interests, and understanding how things work. I value growth,
               consistency, and self-improvement in my daily life. In my free
@@ -148,6 +110,7 @@
 
           <span
             class="block w-full h-0.5 bg-orange-500 rounded-[999px] mb-2 mt-4 sm:mb-2 sm:mt-6"
+            aria-hidden="true"
           ></span>
 
           <ul
