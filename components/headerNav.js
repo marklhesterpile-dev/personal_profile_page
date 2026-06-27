@@ -10,10 +10,10 @@ function renderNavLink(nav) {
   `;
 }
 
-function renderNavLinks(links){
-   return `
+function renderNavLinks(links) {
+  return `
     <span
-      class="pill absolute top-0 left-0 h-full bg-blue-500 rounded-lg z-0 transition-all"
+      class="pill flex absolute top-0 left-0 h-full bg-blue-500 rounded-lg z-0 transition-all"
       aria-hidden="true"
     ></span>
     ${links.map((link) => renderNavLink(link)).join("")}
@@ -43,7 +43,8 @@ const navLinks = [
   },
 ];
 
+const navLink = Array.from(document.getElementsByClassName("navLinks"));
 
-const navLink = document.getElementById("navLinks");
-
-navLink.innerHTML = renderNavLinks(navLinks);
+navLink.forEach((link) => {
+  link.innerHTML = renderNavLinks(navLinks);
+});

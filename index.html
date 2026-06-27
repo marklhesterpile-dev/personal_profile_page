@@ -55,6 +55,7 @@
 
     <script src="components/headerNav.js" defer></script>
     <script src="components/headerNavPill.js" defer></script>
+    <script src="components/responsiveNav.js" defer></script>
     <script src="components/heroPicture.js" defer></script>
     <script src="components/socialLinkButton.js" defer></script>
 
@@ -68,16 +69,63 @@
   </head>
   <body class="min-h-svh bg-white">
     <header
-      class="flex flex-row items-center justify-center flex-nowrap gap-12 w-full fixed z-9999"
+      class="flex flex-row items-center justify-start sm:justify-center flex-nowrap gap-12 w-full fixed z-9999 bg-white border-2 border-night-200 sm:border-0 shadow-xs sm:shadow-none"
     >
-
-      <nav>
+      <!-- Web Nav -->
+      <nav class="hidden sm:flex justify-center">
         <div
           class="w-full p-4 bg-night-300/20 rounded-b-2xl flex items-center justify-between backdrop-blur-xl border-l-2 border-r-2 border-b-2 border-black/10"
         >
           <ul
-            class="grid grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center w-full relative"
-            id="navLinks"
+            class="navLinks grid grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center w-full relative"
+          ></ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <nav class="sm:hidden">
+        <div class="flex justify-end p-4">
+          <button id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+            <img
+              id="menuIcon"
+              src="public/assets/visual_assets/icons/List.svg"
+              alt="Menu Icon"
+              fetchpriority="low"
+              decoding="async"
+              width="36"
+              height="36"
+            />
+          </button>
+        </div>
+
+        <div
+          id="mobileMenuBackdrop"
+          class="hidden fixed inset-0 bg-black/30 z-9998"
+        ></div>
+
+        <div
+          id="mobileMenu"
+          class="fixed top-0 left-0 h-full w-[40vw] -translate-x-full transition-transform duration-300 ease-in-out p-4 bg-night-300/20 backdrop-blur-xl border-r-2 border-black/10 z-9999"
+        >
+          <div class="flex justify-end pt-0 pb-4 pl-4 pr-0">
+            <button
+              id="menuBtnClose"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+            >
+              <img
+                id="menuIconClose"
+                src="public/assets/visual_assets/icons/X.svg"
+                alt="Menu Icon"
+                fetchpriority="low"
+                decoding="async"
+                width="36"
+                height="36"
+              />
+            </button>
+          </div>
+          <ul
+            class="navLinks flex flex-col items-stretch gap-2 w-full relative"
           ></ul>
         </div>
       </nav>
@@ -89,7 +137,9 @@
         class="grid grid-cols-1 gap-y-8 sm:grid-cols-[2fr_1fr] gap-x-16 justify-center items-center md:items-start"
       >
         <section class="flex flex-col gap-3 pt-20 sm:py-14">
-          <p class="font-[Inter] text-night-900 text-[16px] xs:text-lg lg:text-2xl">
+          <p
+            class="font-[Inter] text-night-900 text-[16px] xs:text-lg lg:text-2xl"
+          >
             Hi there!
           </p>
 
@@ -99,7 +149,9 @@
             >
               I'm Mark Lhester Pile
             </h1>
-            <p class="font-[Inter] text-night-1100 text-sm xs:text-[16px] lg:text-xl">
+            <p
+              class="font-[Inter] text-night-1100 text-sm xs:text-[16px] lg:text-xl"
+            >
               A curious and reflective person who enjoys learning, discovering
               new interests, and understanding how things work. I value growth,
               consistency, and self-improvement in my daily life. In my free
