@@ -58,6 +58,8 @@
     <script src="components/responsiveNav.js" defer></script>
     <script src="components/heroPicture.js" defer></script>
     <script src="components/socialLinkButton.js" defer></script>
+    <script src="components/aboutCards.js" defer></script>
+    <script src="components/seeMoreToggle.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -132,11 +134,12 @@
     </header>
 
     <main class="p-4 sm:py-32 sm:px-6 lg:px-24">
+      <!-- ? Home -->
       <div
         id="home"
-        class="grid grid-cols-1 gap-y-8 sm:grid-cols-[2fr_1fr] gap-x-16 justify-center items-center md:items-start"
+        class="grid grid-cols-1 gap-y-4 sm:grid-cols-[2fr_1fr] gap-x-6 md:gap-x-12 lg:gap-x-16 justify-center items-center md:items-start"
       >
-        <section class="flex flex-col gap-3 pt-20 sm:py-14">
+        <section class="flex flex-col gap-3 mt-20 sm:my-14">
           <p
             class="font-[Inter] text-night-900 text-[16px] xs:text-lg lg:text-2xl"
           >
@@ -171,8 +174,134 @@
           ></ul>
         </section>
 
-        <div id="heroPictureContainer" class="w-full h-full"></div>
+        <div id="heroPictureContainer" class="w-full h-60 sm:h-full"></div>
       </div>
+
+      <section
+        id="about"
+        class="flex flex-col gap-4 sm:gap-7 lg:gap-10 my-16  sm:my-20"
+      >
+        <div
+          aria-labelledby="aboutMe_title"
+          class="flex flex-col align-center justify-center"
+        >
+          <h1
+            id="aboutMe_title"
+            class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
+          >
+            About Me
+          </h1>
+          <p class="font-normal font-[Inter] text-sm md:text-base text-center">
+            An overview of my background,personality, and the values that guide
+            me in life.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4 sm:gap-8">
+          <article
+            class="flex flex-col w-full sm:flex-row bg-night-100 rounded-2xl overflow-hidden"
+          >
+            <figure
+              id="aboutImgHolder"
+              class="w-full sm:w-2/5 sm:max-w-72 lg:max-w-80 shrink-0"
+            ></figure>
+
+            <div class="flex flex-col gap-8 p-4">
+              <div aria-labelledby="who_amICard" class="flex flex-col gap-3">
+                <h2
+                  id="who_amICard"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px]"
+                >
+                  Who am I?
+                </h2>
+
+                <div
+                  aria-labelledby="whoamI_description"
+                  class="flex flex-col gap-2"
+                >
+                  <p
+                    id="whoamI_description"
+                    class="font-normal font-[Inter] text-sm md:text-base"
+                  >
+                    I’m someone who enjoys learning new things, especially when
+                    it comes to web development and design. I’ve been spending a
+                    lot of time exploring HTML, CSS, and building small projects
+                    that help me understand how websites are structured and
+                    styled. I like seeing ideas slowly turn into something real
+                    that I can actually open in a browser.
+                  </p>
+
+                  <p
+                    id="whoamI_Extra"
+                    class="font-normal font-[Inter] text-sm md:text-base truncate sm:whitespace-normal"
+                  >
+                    Most of the time, I’m just experimenting trying out new
+                    layouts, breaking things, fixing them again, and learning
+                    from the process. I don’t rush things. I prefer taking it
+                    step by step and really understanding what I’m doing instead
+                    of just copying code.
+                  </p>
+
+                  <button
+                    id="seeMoreToggle"
+                    type="button"
+                    class="text-blue-500 text-sm font-medium self-start sm:hidden cursor-pointer font-[Inter]"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="flex flex-col w-full gap-4 sm:flex-row">
+            <article
+              aria-labelledby="myPersonality"
+              class="bg-night-100 flex flex-col items-center justify-center p-6 min-w-3xs flex-1 rounded-2xl gap-4 sm:p-8"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <div
+                  id="cardHead"
+                  class="px-3 py-3 bg-blue-500 cursor-pointer transition-all inline-block rounded-xl"
+                ></div>
+                <h2
+                  id="myPersonality"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap mt-1 sm:text-[24px] md:text-[28px]"
+                >
+                  My Personality
+                </h2>
+              </div>
+
+              <ul
+                id="traitsList"
+                class="grid grid-cols-2 gap-x-3 gap-y-2 w-full"
+              ></ul>
+            </article>
+
+            <article
+              aria-labelledby="myValues"
+              class="bg-night-100 flex flex-col items-center justify-center p-6 min-w-3xs flex-1 rounded-2xl gap-4 sm:p-8"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <div
+                  id="cardValue"
+                  class="px-3 py-3 bg-blue-500 cursor-pointer transition-all inline-block rounded-xl"
+                ></div>
+                <h2
+                  id="myValues"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap mt-1 sm:text-[24px] md:text-[28px]"
+                >
+                  My Values
+                </h2>
+              </div>
+              <ul
+                id="valuesList"
+                class="grid grid-cols-2 gap-x-3 gap-y-2 w-full"
+              ></ul>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

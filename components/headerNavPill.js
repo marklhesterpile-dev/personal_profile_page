@@ -38,7 +38,6 @@ function setActive(href) {
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
     setActive(link.getAttribute("href"));
   });
 });

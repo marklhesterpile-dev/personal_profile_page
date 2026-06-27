@@ -11,9 +11,7 @@ function createLinkButton(linkBtn) {
             fetchpriority="low"
             decoding="async"
             loading="lazy"
-            width="28"
-            height="28"
-            class="w-7 h7 lg:w-8 lg:h-8"
+            class="w-6.25 h-6.25 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
           />
         </a>
   `;

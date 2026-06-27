@@ -5,7 +5,7 @@ function createHeroPicture(picture) {
     fetchpriority="high"
     loading="lazy"
     decoding="async"
-    class="object-cover w-full h-[50%]
+    class="object-cover w-full h-full
      sm:w-full sm:h-full border-night-200 border-2 rounded-2xl"
     >
   `;
