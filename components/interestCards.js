@@ -16,7 +16,7 @@ function createInterestCard(cardImage) {
 
 function createInterestDetails(interest) {
   return `
-    <li class="flex flex-row gap-3 3xs:hidden sm:flex">
+    <li class="flex-row gap-3 hidden sm:flex">
       <img 
         src="public/assets/visual_assets/icons/StarFour.svg" 
         alt="A star icon symbolizing interest/s of a person" 

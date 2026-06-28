@@ -61,6 +61,7 @@
     <script src="components/aboutCards.js" defer></script>
     <script src="components/seeMoreToggle.js" defer></script>
     <script src="components/interestCards.js" defer></script>
+    <script src="components/favoriteCards.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -179,10 +180,7 @@
       </div>
 
       <!-- ? About Section -->
-      <section
-        id="about"
-        class="flex flex-col gap-4 sm:gap-7 lg:gap-10 py-24"
-      >
+      <section id="about" class="flex flex-col gap-4 sm:gap-7 lg:gap-10 py-24">
         <div
           aria-labelledby="aboutMe_title"
           class="flex flex-col align-center justify-center"
@@ -310,7 +308,7 @@
         id="interests"
         class="flex flex-col gap-4 sm:gap-7 lg:gap-10 py-24"
       >
-        <div aria-labelledby="interestSection" class="px-6">
+        <div aria-labelledby="interestSection">
           <h1
             id="interestSection"
             class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
@@ -325,7 +323,7 @@
 
         <!-- Interest Cards Main Container -->
         <div
-          class="grid gap-4 3xs:grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8 justify-center items-start"
+          class="grid gap-4 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8 justify-center items-start"
         >
           <!-- Card 1 -->
           <article class="bg-night-100 rounded-xl overflow-hidden h-full">
@@ -449,6 +447,188 @@
           </article>
         </div>
         <!-- Interest Cards Main Container -->
+      </section>
+
+      <!-- ? Favorites Section -->
+      <section id="favorites" class="flex flex-col gap-10 py-24">
+        <div aria-labelledby="favoriteSection">
+          <h1
+            id="favoriteSection"
+            class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
+          >
+            My Favorites
+          </h1>
+          <p class="font-normal font-[Inter] text-sm md:text-base text-center">
+            A colection of what resonates with me most.
+          </p>
+        </div>
+
+        <!-- Favorites Cards Main Container -->
+        <div
+          class="grid gap-4 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8 justify-center items-start"
+        >
+          <!-- Card 1 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="animeImageContainer_fav"></div>
+
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titleAnime_fav">
+                <h2
+                  id="titleAnime_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Anime
+                </h2>
+              </div>
+
+              <div aria-labelledby="anime_fav">
+                <ul id="anime_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container -->
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="colorImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titleColor_fav">
+                <h2
+                  id="titleColor_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Color
+                </h2>
+              </div>
+
+              <div aria-labelledby="color_fav">
+                <ul id="color_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container -->
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="iceCreamImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titleIceCream_fav">
+                <h2
+                  id="titleIceCream_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Ice Cream
+                </h2>
+              </div>
+
+              <div aria-labelledby="iceCream_fav">
+                <ul id="iceCream_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container -->
+          </article>
+
+          <!-- Card 4 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="drinkImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titleDrink_fav">
+                <h2
+                  id="titleDrink_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Drinks
+                </h2>
+              </div>
+
+              <div aria-labelledby="drink_fav">
+                <ul id="drink_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container -->
+          </article>
+
+          <!-- Card 5 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="mealImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titleMeal_fav">
+                <h2
+                  id="titleMeal_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Meals
+                </h2>
+              </div>
+
+              <div aria-labelledby="meal_fav">
+                <ul id="meal_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container-->
+          </article>
+
+          <!-- Card 6 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="musicImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titleMusic_fav">
+                <h2
+                  id="titleMusic_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Music
+                </h2>
+              </div>
+
+              <div aria-labelledby="music_fav">
+                <ul id="music_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container-->
+          </article>
+
+          <!-- Card 7 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="petImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titlePet_fav">
+                <h2
+                  id="titlePet_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Pets
+                </h2>
+              </div>
+
+              <div aria-labelledby="pet_fav">
+                <ul id="pet_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container -->
+          </article>
+
+          <!-- Card 8 -->
+          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+            <div id="placeImageContainer_fav"></div>
+            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+              <div aria-labelledby="titlePlace_fav">
+                <h2
+                  id="titlePlace_fav"
+                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                >
+                  Places
+                </h2>
+              </div>
+
+              <div aria-labelledby="place_fav">
+                <ul id="place_fav" class="flex flex-col gap-1"></ul>
+              </div>
+            </div>
+            <!-- Bulleted List Container -->
+          </article>
+        </div>
+        <!-- Favorites Cards Main Container -->
       </section>
     </main>
   </body>
