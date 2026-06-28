@@ -23,12 +23,14 @@
 
 @components {
   .pill {
-    transition: left 0.25s ease, width 0.25s ease;
+    transition:
+      left 0.25s ease,
+      width 0.25s ease;
   }
 }
 
-@base{
-  *{
+@base {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

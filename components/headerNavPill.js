@@ -7,14 +7,12 @@ function movePill(navList, activeLink) {
   const isVertical = getComputedStyle(navList).flexDirection === "column";
 
   if (isVertical) {
-    
     // Mobile pill
     pill.style.top = activeLink.offsetTop + "px";
     pill.style.left = "0px";
     pill.style.height = activeLink.offsetHeight + "px";
     pill.style.width = "100%";
   } else {
-    
     // Web pill
     pill.style.left = activeLink.offsetLeft + "px";
     pill.style.top = "0px";

@@ -51,7 +51,8 @@ const favoriteCardImage = [
     containerId: "animeImageContainer_fav",
     id: "animeImage_fav",
     src: "public/assets/visual_assets/images/illustrations/favorite-anime-square.webp",
-    altText: "Naruto Uzumaki, the main protagonist of the anime Naruto Shippuden.",
+    altText:
+      "Naruto Uzumaki, the main protagonist of the anime Naruto Shippuden.",
   },
   {
     containerId: "colorImageContainer_fav",

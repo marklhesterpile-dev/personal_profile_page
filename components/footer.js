@@ -12,7 +12,7 @@ function createFooterSocials(socialsImage) {
           height="36"
           class="shrink-0">
 
-          <span class="text-nowrap font-[Inter]">${socialsImage?.caption}
+          <span class="font-normal font-[Inter] text-sm md:text-base text-nowrap">${socialsImage?.caption}
           </span>
       </a>
     </li>

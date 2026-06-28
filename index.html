@@ -74,15 +74,15 @@
   </head>
   <body class="min-h-svh bg-white">
     <header
-      class="flex flex-row items-center justify-start sm:justify-center flex-nowrap gap-12 w-full fixed z-9999 bg-white border-2 border-night-200 sm:border-0 shadow-xs sm:shadow-none"
+      class="border-night-200 fixed z-9999 flex w-full flex-row flex-nowrap items-center justify-start gap-12 border-2 bg-white shadow-xs sm:justify-center sm:border-0 sm:bg-transparent sm:shadow-none"
     >
       <!-- Web Nav -->
-      <nav class="hidden sm:flex justify-center">
+      <nav class="hidden justify-center sm:flex">
         <div
-          class="w-full p-4 bg-night-300/20 rounded-b-2xl flex items-center justify-between backdrop-blur-xl border-l-2 border-r-2 border-b-2 border-black/10"
+          class="bg-night-300/20 flex w-full items-center justify-between rounded-b-2xl border-r-2 border-b-2 border-l-2 border-black/10 p-4 backdrop-blur-xl"
         >
           <ul
-            class="navLinks grid grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center w-full relative"
+            class="navLinks relative grid w-full grid-cols-[repeat(5,minmax(120px,1fr))] items-center justify-center"
           ></ul>
         </div>
       </nav>
@@ -105,14 +105,14 @@
 
         <div
           id="mobileMenuBackdrop"
-          class="hidden fixed inset-0 bg-black/30 z-9998"
+          class="fixed inset-0 z-9998 hidden bg-black/30"
         ></div>
 
         <div
           id="mobileMenu"
-          class="fixed top-0 left-0 h-full w-[40vw] -translate-x-full transition-transform duration-300 ease-in-out p-4 bg-night-300/20 backdrop-blur-xl border-r-2 border-black/10 z-9999"
+          class="bg-night-300/20 fixed top-0 left-0 z-9999 h-full w-[40vw] -translate-x-full border-r-2 border-black/10 p-4 backdrop-blur-xl transition-transform duration-300 ease-in-out"
         >
-          <div class="flex justify-end pt-0 pb-4 pl-4 pr-0">
+          <div class="flex justify-end pt-0 pr-0 pb-4 pl-4">
             <button
               id="menuBtnClose"
               aria-expanded="false"
@@ -130,7 +130,7 @@
             </button>
           </div>
           <ul
-            class="navLinks flex flex-col items-stretch gap-2 w-full relative"
+            class="navLinks relative flex w-full flex-col items-stretch gap-2"
           ></ul>
         </div>
       </nav>
@@ -140,23 +140,23 @@
       <!-- ? Home Section -->
       <div
         id="home"
-        class="grid grid-cols-1 gap-y-4 sm:grid-cols-[2fr_1fr] gap-x-6 md:gap-x-12 lg:gap-x-16 justify-center items-center md:items-start pt-16 pb-8 sm:pt-20 sm:pb-10 lg:pt-30 lg:pb-15"
+        class="grid grid-cols-1 items-center justify-center gap-x-6 gap-y-4 pt-16 pb-8 sm:grid-cols-[2fr_1fr] sm:pt-20 sm:pb-10 md:items-start md:gap-x-12 lg:gap-x-16 lg:pt-30 lg:pb-15"
       >
-        <section class="flex flex-col gap-3 mt-10 sm:my-14">
+        <section class="mt-10 flex flex-col gap-3 sm:my-14">
           <p
-            class="font-[Inter] text-night-900 text-[16px] xs:text-lg lg:text-2xl"
+            class="text-night-900 xs:text-lg font-[Inter] text-[16px] lg:text-2xl"
           >
             Hi there!
           </p>
 
           <div class="flex flex-col gap-1">
             <h1
-              class="font-['Google_Sans'] text-night-1200 text-xl xs:text-3xl lg:text-5xl font-semibold"
+              class="text-night-1200 xs:text-3xl font-['Google_Sans'] text-xl font-semibold lg:text-5xl"
             >
               I'm Mark Lhester Pile
             </h1>
             <p
-              class="font-[Inter] text-night-1100 text-sm xs:text-[16px] lg:text-xl"
+              class="text-night-1100 xs:text-[16px] font-[Inter] text-sm lg:text-xl"
             >
               A curious and reflective person who enjoys learning, discovering
               new interests, and understanding how things work. I value growth,
@@ -167,32 +167,32 @@
           </div>
 
           <span
-            class="block w-full h-0.5 bg-orange-500 rounded-[999px] mb-2 mt-4 sm:mb-2 sm:mt-6"
+            class="mt-4 mb-2 block h-0.5 w-full rounded-[999px] bg-orange-500 sm:mt-6 sm:mb-2"
             aria-hidden="true"
           ></span>
 
           <ul
             id="socialLinkBtn"
-            class="flex justify-start items-center gap-2 flex-wrap"
+            class="flex flex-wrap items-center justify-start gap-2"
           ></ul>
         </section>
 
-        <div id="heroPictureContainer" class="w-full h-60 sm:h-full"></div>
+        <div id="heroPictureContainer" class="h-60 w-full sm:h-full"></div>
       </div>
 
       <!-- ? About Section -->
-      <section id="about" class="flex flex-col gap-4 sm:gap-7 lg:gap-10 py-24">
+      <section id="about" class="flex flex-col gap-4 py-24 sm:gap-7 lg:gap-10">
         <div
           aria-labelledby="aboutMe_title"
-          class="flex flex-col align-center justify-center"
+          class="align-center flex flex-col justify-center"
         >
           <h1
             id="aboutMe_title"
-            class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
+            class="text-center font-[Google_Sans] text-2xl leading-tight font-semibold whitespace-nowrap sm:text-3xl md:text-4xl"
           >
             About Me
           </h1>
-          <p class="font-normal font-[Inter] text-sm md:text-base text-center">
+          <p class="text-center font-[Inter] text-sm font-normal md:text-base">
             An overview of my background,personality, and the values that guide
             me in life.
           </p>
@@ -200,18 +200,18 @@
 
         <div class="flex flex-col items-center justify-center gap-4 sm:gap-8">
           <article
-            class="flex flex-col w-full sm:flex-row bg-night-100 rounded-2xl overflow-hidden"
+            class="bg-night-100 flex w-full flex-col overflow-hidden rounded-2xl sm:flex-row"
           >
             <figure
               id="aboutImgHolder"
-              class="w-full sm:w-2/5 sm:max-w-72 lg:max-w-80 shrink-0"
+              class="w-full shrink-0 sm:w-2/5 sm:max-w-72 lg:max-w-80"
             ></figure>
 
             <div class="flex flex-col gap-8 p-4">
               <div aria-labelledby="who_amICard" class="flex flex-col gap-3">
                 <h2
                   id="who_amICard"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px]"
+                  class="font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Who am I?
                 </h2>
@@ -222,7 +222,7 @@
                 >
                   <p
                     id="whoamI_description"
-                    class="font-normal font-[Inter] text-sm md:text-base"
+                    class="font-[Inter] text-sm font-normal md:text-base"
                   >
                     I’m someone who enjoys learning new things, especially when
                     it comes to web development and design. I’ve been spending a
@@ -234,7 +234,7 @@
 
                   <p
                     id="whoamI_Extra"
-                    class="font-normal font-[Inter] text-sm md:text-base truncate sm:whitespace-normal"
+                    class="truncate font-[Inter] text-sm font-normal sm:whitespace-normal md:text-base"
                   >
                     Most of the time, I’m just experimenting trying out new
                     layouts, breaking things, fixing them again, and learning
@@ -246,7 +246,7 @@
                   <button
                     id="seeMoreToggle"
                     type="button"
-                    class="text-blue-500 text-sm font-medium self-start sm:hidden cursor-pointer font-[Inter]"
+                    class="cursor-pointer self-start font-[Inter] text-sm font-medium text-blue-500 sm:hidden"
                   >
                     See More
                   </button>
@@ -255,19 +255,19 @@
             </div>
           </article>
 
-          <div class="flex flex-col w-full gap-4 sm:flex-row">
+          <div class="flex w-full flex-col gap-4 sm:flex-row">
             <article
               aria-labelledby="myPersonality"
-              class="bg-night-100 flex flex-col items-center justify-center p-6 min-w-3xs flex-1 rounded-2xl gap-4 sm:p-8"
+              class="bg-night-100 flex min-w-3xs flex-1 flex-col items-center justify-center gap-4 rounded-2xl p-6 sm:p-8"
             >
               <div class="flex flex-col items-center justify-center">
                 <div
                   id="cardHead"
-                  class="px-3 py-3 bg-blue-500 cursor-pointer transition-all inline-block rounded-xl"
+                  class="inline-block cursor-pointer rounded-xl bg-blue-500 px-3 py-3 transition-all"
                 ></div>
                 <h2
                   id="myPersonality"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap mt-1 sm:text-[24px] md:text-[28px]"
+                  class="mt-1 font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   My Personality
                 </h2>
@@ -275,29 +275,29 @@
 
               <ul
                 id="traitsList"
-                class="grid grid-cols-2 gap-x-3 gap-y-2 w-full"
+                class="grid w-full grid-cols-2 gap-x-3 gap-y-2"
               ></ul>
             </article>
 
             <article
               aria-labelledby="myValues"
-              class="bg-night-100 flex flex-col items-center justify-center p-6 min-w-3xs flex-1 rounded-2xl gap-4 sm:p-8"
+              class="bg-night-100 flex min-w-3xs flex-1 flex-col items-center justify-center gap-4 rounded-2xl p-6 sm:p-8"
             >
               <div class="flex flex-col items-center justify-center">
                 <div
                   id="cardValue"
-                  class="px-3 py-3 bg-blue-500 cursor-pointer transition-all inline-block rounded-xl"
+                  class="inline-block cursor-pointer rounded-xl bg-blue-500 px-3 py-3 transition-all"
                 ></div>
                 <h2
                   id="myValues"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap mt-1 sm:text-[24px] md:text-[28px]"
+                  class="mt-1 font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   My Values
                 </h2>
               </div>
               <ul
                 id="valuesList"
-                class="grid grid-cols-2 gap-x-3 gap-y-2 w-full"
+                class="grid w-full grid-cols-2 gap-x-3 gap-y-2"
               ></ul>
             </article>
           </div>
@@ -307,16 +307,16 @@
       <!-- ? Interest Section -->
       <section
         id="interests"
-        class="flex flex-col gap-4 sm:gap-7 lg:gap-10 py-24"
+        class="flex flex-col gap-4 py-24 sm:gap-7 lg:gap-10"
       >
         <div aria-labelledby="interestSection">
           <h1
             id="interestSection"
-            class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
+            class="text-center font-[Google_Sans] text-2xl leading-tight font-semibold whitespace-nowrap sm:text-3xl md:text-4xl"
           >
             My Interests
           </h1>
-          <p class="font-normal font-[Inter] text-sm md:text-base text-center">
+          <p class="text-center font-[Inter] text-sm font-normal md:text-base">
             The things I enjoy exploring, learning, and spending my time on
             outside of my daily responsibilities.
           </p>
@@ -324,17 +324,16 @@
 
         <!-- Interest Cards Main Container -->
         <div
-          class="grid gap-4 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8 justify-center items-start"
+          class="xs:grid-cols-3 grid grid-cols-2 items-start justify-center gap-4 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8"
         >
-          <!-- Card 1 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="animeImageContainer"></div>
 
-            <div class="flex flex-col p-4 gap-y-0 xs:gap-y-0 sm:gap-y-2">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleAnime">
                 <h2
                   id="titleAnime"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Anime
                 </h2>
@@ -344,17 +343,15 @@
                 <ul id="anime" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 2 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="bookImageContainer"></div>
-            <div class="flex flex-col p-4 gap-y-0 xs:gap-y-0 sm:gap-y-2">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleBook">
                 <h2
                   id="titleBook"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Books
                 </h2>
@@ -364,17 +361,15 @@
                 <ul id="book" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 3 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="drawingImageContainer"></div>
-            <div class="flex flex-col p-4 gap-y-0 xs:gap-y-0 sm:gap-y-2">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleDrawing">
                 <h2
                   id="titleDrawing"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Drawing
                 </h2>
@@ -384,17 +379,15 @@
                 <ul id="drawing" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 4 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="gamingImageContainer"></div>
-            <div class="flex flex-col p-4 gap-y-0 xs:gap-y-0 sm:gap-y-2">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleGaming">
                 <h2
                   id="titleGaming"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Gaming
                 </h2>
@@ -404,17 +397,15 @@
                 <ul id="gaming" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 5 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="musicImageContainer"></div>
-            <div class="flex flex-col p-4 gap-y-0 xs:gap-y-0 sm:gap-y-2">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleMusic">
                 <h2
                   id="titleMusic"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Music
                 </h2>
@@ -424,17 +415,15 @@
                 <ul id="music" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container-->
           </article>
 
-          <!-- Card 6 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="readingImageContainer"></div>
-            <div class="flex flex-col p-4 gap-y-0 xs:gap-y-0 sm:gap-y-2">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleReading">
                 <h2
                   id="titleReading"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Reading
                 </h2>
@@ -444,10 +433,8 @@
                 <ul id="reading" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
         </div>
-        <!-- Interest Cards Main Container -->
       </section>
 
       <!-- ? Favorites Section -->
@@ -455,28 +442,27 @@
         <div aria-labelledby="favoriteSection">
           <h1
             id="favoriteSection"
-            class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
+            class="text-center font-[Google_Sans] text-2xl leading-tight font-semibold whitespace-nowrap sm:text-3xl md:text-4xl"
           >
             My Favorites
           </h1>
-          <p class="font-normal font-[Inter] text-sm md:text-base text-center">
+          <p class="text-center font-[Inter] text-sm font-normal md:text-base">
             A colection of what resonates with me most.
           </p>
         </div>
 
         <!-- Favorites Cards Main Container -->
         <div
-          class="grid gap-4 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8 justify-center items-start"
+          class="xs:grid-cols-3 grid grid-cols-2 items-start justify-center gap-4 md:grid-cols-4 md:gap-6 xl:grid-cols-6 xl:gap-8"
         >
-          <!-- Card 1 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="animeImageContainer_fav"></div>
 
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleAnime_fav">
                 <h2
                   id="titleAnime_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Anime
                 </h2>
@@ -486,17 +472,15 @@
                 <ul id="anime_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 2 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="colorImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleColor_fav">
                 <h2
                   id="titleColor_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Color
                 </h2>
@@ -506,17 +490,15 @@
                 <ul id="color_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 3 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="iceCreamImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleIceCream_fav">
                 <h2
                   id="titleIceCream_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Ice Cream
                 </h2>
@@ -526,17 +508,15 @@
                 <ul id="iceCream_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 4 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="drinkImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleDrink_fav">
                 <h2
                   id="titleDrink_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Drinks
                 </h2>
@@ -546,17 +526,15 @@
                 <ul id="drink_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 5 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="mealImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleMeal_fav">
                 <h2
                   id="titleMeal_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Meals
                 </h2>
@@ -566,17 +544,15 @@
                 <ul id="meal_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container-->
           </article>
 
-          <!-- Card 6 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="musicImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titleMusic_fav">
                 <h2
                   id="titleMusic_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Music
                 </h2>
@@ -586,17 +562,15 @@
                 <ul id="music_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container-->
           </article>
 
-          <!-- Card 7 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="petImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titlePet_fav">
                 <h2
                   id="titlePet_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Pets
                 </h2>
@@ -606,17 +580,15 @@
                 <ul id="pet_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
 
-          <!-- Card 8 -->
-          <article class="bg-night-100 rounded-xl overflow-hidden h-full">
+          <article class="bg-night-100 h-full overflow-hidden rounded-xl">
             <div id="placeImageContainer_fav"></div>
-            <div class="flex flex-col gap-y-0 xs:gap-y-0 sm:gap-y-2 p-4">
+            <div class="xs:gap-y-0 flex flex-col gap-y-0 p-4 sm:gap-y-2">
               <div aria-labelledby="titlePlace_fav">
                 <h2
                   id="titlePlace_fav"
-                  class="font-semibold font-[Google_Sans] text-[20px] leading-tight whitespace-nowrap sm:text-[24px] md:text-[28px] text-center"
+                  class="text-center font-[Google_Sans] text-[20px] leading-tight font-semibold whitespace-nowrap sm:text-[24px] md:text-[28px]"
                 >
                   Places
                 </h2>
@@ -626,39 +598,45 @@
                 <ul id="place_fav" class="flex flex-col gap-1"></ul>
               </div>
             </div>
-            <!-- Bulleted List Container -->
           </article>
         </div>
-        <!-- Favorites Cards Main Container -->
       </section>
     </main>
 
-     <footer id="socials" class="flex flex-col gap-10 px-6 pt-24 pb-4 3xs:px-4 2xs:px-16 sm:px-20 lg:px-30 bg-blue-100" 
-">
-<div class="flex flex-col items-between justify-center gap-14">
-    <section class="flex flex-col gap-14">
+    <footer
+      id="socials"
+      class="3xs:px-4 2xs:px-16 flex flex-col gap-10 bg-blue-100 px-6 pt-24 pb-4 sm:px-20 lg:px-30"
+    >
+      <div class="items-between flex flex-col justify-center gap-14">
+        <section class="flex flex-col gap-14">
+          <div aria-labelledby="socialsSection" class="px-6">
+            <h1
+              id="socialsSection"
+              class="text-center font-[Google_Sans] text-2xl leading-tight font-semibold whitespace-nowrap sm:text-3xl md:text-4xl"
+            >
+              Let's Connect
+            </h1>
+            <p
+              class="text-center font-[Inter] text-sm font-normal md:text-base"
+            >
+              Let’s stay connected beyond this page.
+            </p>
+          </div>
 
-      <div aria-labelledby="socialsSection" class="px-6">
-        <h1
-          id="socialsSection"
-          class="text-2xl sm:text-3xl md:text-4xl leading-tight whitespace-nowrap font-[Google_Sans] font-semibold text-center"
-        >
-          Let's Connect
-        </h1>
-        <p class="font-normal font-[Inter] text-sm md:text-base text-center">
-          Let’s stay connected beyond this page.
-        </p>
-      </div>
+          <div>
+            <ul
+              id="socialsContainer"
+              class="xs:grid-cols-2 grid grid-cols-1 gap-x-12 gap-y-4 md:grid-cols-3 lg:grid-cols-4"
+            ></ul>
+          </div>
+        </section>
 
-      <div>
-        <ul id="socialsContainer" class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-4">
-        </ul>
-      </div>
-      </section>
-
-      <div class="w-full">
-        <span class="text-center block w-full font-[Inter]">&#xA9; 2026 Mark Lhester Pile &#x2022; All rights reserved</span>
-      </div>
+        <div class="w-full">
+          <span
+            class="block w-full text-center font-[Inter] text-xs text-wrap md:text-sm"
+            >&#xA9; 2026 Mark Lhester Pile &#x2022; All rights reserved</span
+          >
+        </div>
       </div>
     </footer>
   </body>
